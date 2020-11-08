@@ -10,6 +10,6 @@
 
 @interface RCT_EXTERN_MODULE(WeatherWidgetModule, NSObject)
 
-RCT_EXTERN_METHOD(setWidgetData:(NSArray *))
+RCT_EXTERN_METHOD(setWidgetData:(NSDictionary *))
 
 @end

@@ -30,28 +30,28 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const data = [
-  {
+const data = {
+  '101': {
     providerId: 101,
     providerName: 'Open Weather Map',
     values: {
-      humidity: 86,
+      humidity: '86',
     },
     units: {
       humidity: '%',
     },
   },
-  {
+  '102': {
     providerId: 102,
     providerName: 'Weather API',
     values: {
-      humidity: 86,
+      humidity: '86.02',
     },
     units: {
       humidity: '%',
     },
   }
-]
+}
 
 const App: () => React$Node = () => {
 
