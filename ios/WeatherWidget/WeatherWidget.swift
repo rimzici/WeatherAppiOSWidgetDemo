@@ -75,11 +75,14 @@ struct WeatherWidgetEntryView : View {
   var entry: Provider.Entry
   
   var body: some View {
-    VStack {
+    return VStack {
       Text(entry.provider).font(.headline).multilineTextAlignment(.center)
       Text(entry.label).font(.caption).multilineTextAlignment(.center)
       Text(entry.value)
+      Text(Date(), style: .relative)
+        .multilineTextAlignment(.center)
     }
+    .widgetURL(URL(string: "widget-deeplink://WidgetScreen"))
   }
 }
 

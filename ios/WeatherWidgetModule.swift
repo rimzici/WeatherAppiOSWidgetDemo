@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WidgetKit
 
 @objc(WeatherWidgetModule)
 class WeatherWidgetModule: NSObject {
@@ -44,5 +45,12 @@ class WeatherWidgetModule: NSObject {
     } catch {
     }
     return dictionary
+  }
+  
+  @objc(refreshAllWidgets)
+  func refreshAllWidgets() {
+    if #available(iOS 14.0, *) {
+      WidgetCenter.shared.reloadAllTimelines()
+    }
   }
 }

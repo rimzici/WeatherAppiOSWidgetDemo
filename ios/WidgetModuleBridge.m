@@ -11,5 +11,6 @@
 @interface RCT_EXTERN_MODULE(WeatherWidgetModule, NSObject)
 
 RCT_EXTERN_METHOD(setWidgetData:(NSDictionary *))
+RCT_EXTERN_METHOD(refreshAllWidgets)
 
 @end
